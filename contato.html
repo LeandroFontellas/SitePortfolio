@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portifólio Leandro</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo_portfolio.css">
+		<style>
+			ul#lista a{
+				color: blue;
+			}
+			ul#lista{
+				position: relative;
+				top: 75px;
+				left: 350px;
+			}
+			article {
+				position: relative;
+				left: 0px;
+			}
+			article p{
+				position: relative;
+				top: 50px;
+			}
+			
+			button{
+				position: relative;
+				top: 100px;
+				left: 500px;
+				display: block;
+			}
+
+			
+
+			figure{
+				width: 150px;
+				height: 150px;
+				position: relative;
+				left:200px;
+				top: 80px;
+				float:center;
+			}
+			footer{
+				height: 20px;
+				top: 270px;
+			}
+
+			figure#lampada{
+				display: none;
+				position: relative;
+				left: 400px;
+				top: -50px;
+			}
+		</style>
+		
+		<script>
+			function funcao(){
+				alert("Foi mal n tem nada aqui não :)");
+			}
+			var quebrada = false;
+			function mudaLampada(tipo){
+				if (!quebrada){
+					document.getElementById("luz").src="imagens/"+ tipo + ".jpg";
+					if (tipo =='lampada-quebrada'){
+						quebrada=true;
+						
+					}
+				}
+			}
+			function Mudarestado(el) {
+		        var display = document.getElementById(el).style.display;
+		        if(display == "none")
+		            document.getElementById(el).style.display = 'block';
+		        else
+		            document.getElementById(el).style.display = 'none';
+		    }
+		</script>
+	</head>
+	<body>
+
+		<header>
+		<nav id="menu">
+			<h1>PROCESSO SELETIVO ASCII</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="quem_sou.html">Quem Sou</a></li>
+			<li><a href="habilidades.html">Habilidades</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+		</nav>
+		</header>
+		<section><article>
+			<h1>Contato</h1>
+			<p>Apesar de ser um pouco anti-social vocês conseguem chegar a mim com esse número e esse link de facebook ae.</p>
+			<ul id="lista"><li><a onclick="funcao()">(16)99632-8612</a></li>
+				<li><a href="https://www.facebook.com/IMO.fox4" target="_blank">Leandro no Facebruik</a></li></ul>
+			<figure class="gato"><img src="imagens/pokemon.jpg"><figcaption>
+				<p>Obrigado por chegarem até aqui, pra vocês não ficarem falando que só tinha foto de gato toma ai uma foto de um pokemon.</p>
+			</figcaption></figure>
+			<figure id="lampada">
+				<img id="luz" src="imagens/lampada-apagada.jpg" onmouseover="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" 
+				onclick="mudaLampada('lampada-quebrada')"
+				width="70px" height="70px">
+			</figure>
+		</article></section>
+		<footer id="rodape">
+			<p>Desenvolvido com <img src="imagens/heart-easter.png" width="20px" height="20px" onmouseover="Mudarestado('lampada');"> por (Leandro Fontellas Laurito)</p>
+		</footer>
+</body>
+</html>

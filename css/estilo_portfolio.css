@@ -1,0 +1,127 @@
+@charset "UTF-8";
+a{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+nav#menu h1{
+	font-family: Arial;
+	color: white;
+
+	padding: 30px;
+	
+}
+nav#menu{
+	background-image: linear-gradient(to right,rgb(0,119,136), rgb(7,213,213));
+	box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+}
+
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+	top: -70px;
+	float: right;
+	margin-right: 100px;
+
+
+}
+
+nav#menu li{
+	display: inline-block;
+	margin: 5px;
+	padding: 10px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover{
+	background-color: lightgray;
+}
+
+section h1{
+	font-family: Arial;
+	size: 30pt;
+	color: black;
+	position: relative;
+	left: 175px;	
+}
+
+article{
+	left: 200px;
+	top: 100px;
+	margin-right: 500px;
+	position: relative;
+}
+
+article p{
+	position: relative;
+	left: 250px;
+	top: -150px;
+
+}
+
+article#terceiroartigo p{
+	position: relative;
+	top: 50px;
+}
+
+footer{
+	background-image: linear-gradient(to right,rgb(0,119,136), rgb(7,213,213));
+	box-shadow: 2px 2px 5px rgb(0,0,0);
+	padding-top: 30px;
+	padding-bottom: 50px;
+	position: relative;
+	top: 200px;
+}
+
+footer p{
+	color: white;
+	position: relative;
+	float:left;
+	left: 33%;
+	font-size: 15pt;
+
+}
+
+
+			figure.gato{
+			position: relative;
+			float:center;
+			border: 8px solid white;
+			box-shadow: 1px 1px 4px black;
+
+			}
+			figure.gato img{
+				width: 100%;
+				height: 100%
+			}
+			figure.gato figcaption{
+				opacity: 0;
+				position: absolute;
+				top: 0px;
+				background-color: rgba(0,0,0,.4);
+				color: white;
+				width: 100%;
+				height: 100%;
+				box-sizing: border-box;
+				transition: opacity 1s;
+			}
+
+			figure.gato figcaption p{
+				position: relative;
+				left: 0px;
+				top: 0px;
+			}
+			figure.gato:hover figcaption{
+				opacity: 1;
+			}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portifólio Leandro</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo_portfolio.css">
+
+		<style>
+			article {
+				position: relative;
+				left: 0px;
+			}
+
+			article p{
+				position: relative;
+				top: 50px;
+			}
+			figure{
+				width: 200px;
+				height: 200px;
+				position: relative;
+				left: 200px;
+				top: 75px;
+				float:center;	
+			}
+			figure.gato{
+			position: relative;
+			border: 8px solid white;
+			box-shadow: 1px 1px 4px black;
+
+			}
+			figure.gato img{
+				width: 100%;
+				height: 100%
+			}
+			figure.gato figcaption{
+				opacity: 0;
+				position: absolute;
+				top: 0px;
+				background-color: rgba(0,0,0,.4);
+				color: white;
+				width: 100%;
+				height: 100%;
+				box-sizing: border-box;
+				transition: opacity 1s;
+			}
+
+			figure.gato figcaption p{
+				position: relative;
+				left: 0px;
+				top: 0px;
+			}
+			figure.gato:hover figcaption{
+				opacity: 1;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<header>
+		<nav id="menu">
+			<h1>PROCESSO SELETIVO ASCII</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="quem_sou.html">Quem Sou</a></li>
+			<li><a href="habilidades.html">Habilidades</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+		</nav>
+		</header>
+		<section>
+			<article><h1>Quem sou?</h1>
+				<p class="paragrafo">Bom, já falei um pouco de mim la atrás. Vou completar aqui algumas informações com uma foto de gato fofinho. Zuera , continuando a historia la. Depois que cheguei na UFU tomei muito pau (da FAMAT), mas não quis desistir, e hoje ainda estou aqui. Quero muito terminar esse curso, acho que esse definitivamente é o melhor curso.</p>
+				<figure class="gato">
+					<img src="imagens/gatinho_fofo_1.jpg"width="300px"height="300px">
+					<figcaption><p>Isso mesmo gente foto de gato fofinho.</p></figcaption>
+				</figure>
+			</article>
+		</section>
+		<footer id="rodape" >
+			<p>Desenvolvido com <img src="imagens/heart.png" width="15px" height="15px"> por (Leandro Fontellas Laurito)</p>
+		</footer>
+</body>
+</html>
